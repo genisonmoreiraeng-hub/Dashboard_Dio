@@ -1,29 +1,36 @@
-
-<!DOCTYPE html><html lang='pt-BR'><head>
-<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Porsche Executive Intelligence</title>
-<link rel='stylesheet' href='styles.css'>
-<script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
-</head><body>
-<header><h1>PORSCHE <span class='gold'>EXECUTIVE INTELLIGENCE</span></h1></header>
-<div class='container'>
-<div class='filters'>
-<div class='card'><select id='modelo'><option value=''>Modelo Porsche</option></select></div>
-<div class='card'><select id='ano'><option value=''>Model Year</option></select></div>
-<div class='card'><select id='cidade'><option value=''>City</option></select></div>
-<div class='card'><select id='pay'><option value=''>Pay Method</option></select></div>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="sidebar"><h2>PORSCHE</h2><p>Executive Intelligence</p></div>
+<div class="main">
+<section class="hero"><div><h1>Porsche Executive Intelligence</h1><p>Premium Sales Analytics</p></div></section>
+
+<div class="filters">
+<select id="modelo"><option value="">Modelo Porsche</option></select>
+<select id="ano"><option value="">Model Year</option></select>
+<select id="cidade"><option value="">Cidade</option></select>
+<select id="pay"><option value="">Pay Method</option></select>
 </div>
-<div class='kpis'>
-<div class='card'>Vendas<div id='sales' class='value'></div></div>
-<div class='card'>Receita<div id='revenue' class='value'></div></div>
-<div class='card'>Ticket Médio<div id='ticket' class='value'></div></div>
-<div class='card'>Modelo Líder<div id='topmodel' class='value'></div></div>
+
+<div class="kpis">
+<div class="card"><span>Vendas</span><h2 id="sales"></h2></div>
+<div class="card"><span>Receita</span><h2 id="revenue"></h2></div>
+<div class="card"><span>Ticket Médio</span><h2 id="ticket"></h2></div>
+<div class="card"><span>Modelo Líder</span><h2 id="topmodel"></h2></div>
 </div>
-<div class='charts'>
-<div class='card'><h3>Modelos por Cidade</h3><canvas id='modelChart'></canvas></div>
-<div class='card'><h3>Top Cidades</h3><canvas id='cityChart'></canvas></div>
-<div class='card'><h3>Ano Modelo</h3><canvas id='yearChart'></canvas></div>
-<div class='card'><h3>Insights</h3><div id='insights'></div></div>
-</div></div>
-<script src='app.js'></script>
+
+<div class="grid">
+<div class="panel"><h3>Modelos por Cidade</h3><canvas id="modelChart"></canvas></div>
+<div class="panel"><h3>Top Cidades</h3><canvas id="cityChart"></canvas></div>
+<div class="panel"><h3>Ano Modelo</h3><canvas id="yearChart"></canvas></div>
+<div class="panel"><h3>Insights</h3><div id="insights"></div></div>
+</div>
+</div>
+<script src="app.js"></script>
 </body></html>
