@@ -1,0 +1,29 @@
+
+<!DOCTYPE html><html lang='pt-BR'><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Porsche Executive Intelligence</title>
+<link rel='stylesheet' href='styles.css'>
+<script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
+</head><body>
+<header><h1>PORSCHE <span class='gold'>EXECUTIVE INTELLIGENCE</span></h1></header>
+<div class='container'>
+<div class='filters'>
+<div class='card'><select id='modelo'><option value=''>Modelo Porsche</option></select></div>
+<div class='card'><select id='ano'><option value=''>Model Year</option></select></div>
+<div class='card'><select id='cidade'><option value=''>City</option></select></div>
+<div class='card'><select id='pay'><option value=''>Pay Method</option></select></div>
+</div>
+<div class='kpis'>
+<div class='card'>Vendas<div id='sales' class='value'></div></div>
+<div class='card'>Receita<div id='revenue' class='value'></div></div>
+<div class='card'>Ticket Médio<div id='ticket' class='value'></div></div>
+<div class='card'>Modelo Líder<div id='topmodel' class='value'></div></div>
+</div>
+<div class='charts'>
+<div class='card'><h3>Modelos por Cidade</h3><canvas id='modelChart'></canvas></div>
+<div class='card'><h3>Top Cidades</h3><canvas id='cityChart'></canvas></div>
+<div class='card'><h3>Ano Modelo</h3><canvas id='yearChart'></canvas></div>
+<div class='card'><h3>Insights</h3><div id='insights'></div></div>
+</div></div>
+<script src='app.js'></script>
+</body></html>
